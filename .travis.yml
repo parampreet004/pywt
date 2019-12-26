@@ -2,7 +2,9 @@
 #   http://lint.travis-ci.org/
 language: python
 sudo: false
-
+arch: 
+    - amd64
+    - arm64
 env:
   global:
     # Use non-interactive backend

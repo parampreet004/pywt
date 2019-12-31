@@ -11,6 +11,7 @@ env:
     - MPLBACKEND: Agg
     - CYTHON_TRACE: 1
     - NUMPYSPEC=numpy
+    - MATPLOTLIBSPEC=matplotlib
 
 matrix:
   include:

@@ -10,6 +10,7 @@ env:
     # Use non-interactive backend
     - MPLBACKEND: Agg
     - CYTHON_TRACE: 1
+    - NUMPYSPEC=numpy
 
 matrix:
   include:
@@ -84,6 +85,7 @@ before_install:
   - which python; python --version
   - pip install --upgrade pip
   - pip install --upgrade wheel
+  - apt-get install libatlas-base-dev
   # Set numpy version first, other packages link against it
   - pip install $NUMPYSPEC
   - pip install $MATPLOTLIBSPEC

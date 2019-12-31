@@ -12,6 +12,7 @@ env:
     - CYTHON_TRACE: 1
     - NUMPYSPEC=numpy
     - MATPLOTLIBSPEC=matplotlib
+    - CYTHONSPEC=cython
 
 matrix:
   include:

@@ -92,7 +92,7 @@ before_install:
   - pip install pytest pytest-cov coverage codecov futures
   - set -o pipefail
   - if [ "${USE_WHEEL}" == "1" ]; then pip install wheel; fi
-  - if [ "${USE_SCIPY}" == "1" ]; then sudo apt-get install gfortran; pip install scipy; fi
+  - if [ "${USE_SCIPY}" == "1" ]; then pip install scipy; fi
   - |
     if [ "${REFGUIDE_CHECK}" == "1" ]; then
         pip install sphinx numpydoc

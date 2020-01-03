@@ -2,7 +2,7 @@
 #   http://lint.travis-ci.org/
 language: python
 sudo: false
-arch: 
+arch:
     - amd64
     - arm64
 env:

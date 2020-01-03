@@ -73,7 +73,6 @@ matrix:
         - MATPLOTLIBSPEC=matplotlib
         - CYTHONSPEC=cython
         - TRAVIS_PYTHON_VERSION=3.5
-        
 cache: pip
 
 before_install:

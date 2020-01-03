@@ -86,7 +86,7 @@ before_install:
   - which python; python --version
   - pip install --upgrade pip
   - pip install --upgrade wheel
-  - sudo apt-get install libatlas-base-dev
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install libatlas-base-dev; fi
   # Set numpy version first, other packages link against it
   - pip install $NUMPYSPEC
   - pip install $MATPLOTLIBSPEC
